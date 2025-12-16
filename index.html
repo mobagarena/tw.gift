@@ -5,32 +5,15 @@
   <title>《傳說對決》官方公告｜限定連動</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    :root{
-      --bg1:#0b1022; --bg2:#05070f; --card:#0e1430; --brand:#3b82f6; --gold:#ffd36a; --muted:#8b92c9;
-    }
+    :root{--bg1:#0b1022; --bg2:#05070f; --card:#0e1430; --brand:#3b82f6; --gold:#ffd36a; --muted:#8b92c9; --red:#e53935}
     *{box-sizing:border-box}
-    body{
-      margin:0; min-height:100vh; font-family:"Microsoft JhengHei","PingFang TC",sans-serif;
-      background:linear-gradient(180deg,var(--bg1),var(--bg2)); color:#e6e9ff;
-    }
+    body{margin:0; min-height:100vh; font-family:"Microsoft JhengHei","PingFang TC",sans-serif; background:linear-gradient(180deg,var(--bg1),var(--bg2)); color:#e6e9ff}
 
     /* Header */
-    header{
-      position:sticky; top:0; z-index:10;
-      background:linear-gradient(180deg,#1b2a5b,#111a3a);
-      box-shadow:0 2px 10px rgba(0,0,0,.6);
-    }
-    .header-inner{
-      max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:12px;
-    }
-    .logo{
-      display:flex; align-items:center; gap:8px; cursor:pointer; text-decoration:none; color:#fff;
-    }
-    .logo-badge{
-      width:28px; height:28px; border-radius:6px; background:#e53935; display:grid; place-items:center;
-      font-weight:900; letter-spacing:.5px; box-shadow:0 4px 12px rgba(229,57,53,.5);
-    }
-    .logo span{font-weight:700; letter-spacing:.5px}
+    header{position:sticky; top:0; z-index:10; background:linear-gradient(180deg,#1b2a5b,#111a3a); box-shadow:0 2px 10px rgba(0,0,0,.6)}
+    .header-inner{max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:12px}
+    .logo{display:flex; align-items:center; gap:8px; cursor:pointer; text-decoration:none}
+    .logo span{font-weight:800; letter-spacing:.5px; color:var(--red)}
     .header-title{font-weight:700; opacity:.9}
 
     /* Layout */
@@ -39,10 +22,7 @@
     @media(min-width:900px){ .grid{grid-template-columns: 1.2fr .8fr} }
 
     /* Card */
-    .card{
-      background:var(--card); border-radius:14px; padding:20px;
-      box-shadow:0 20px 50px rgba(0,0,0,.55);
-    }
+    .card{background:var(--card); border-radius:14px; padding:20px; box-shadow:0 20px 50px rgba(0,0,0,.55)}
     .tag{display:inline-block; background:rgba(255,211,106,.15); color:var(--gold); padding:6px 12px; border-radius:999px; font-size:12px}
     h1{margin:10px 0 6px; color:var(--gold)}
     .date{font-size:12px; color:var(--muted); margin-bottom:12px}
@@ -51,12 +31,7 @@
     .reward{margin:14px 0; padding:14px; border-radius:12px; background:linear-gradient(145deg,#ffd36a,#ffb703); color:#2b1d00; font-weight:700}
 
     /* Side */
-    .side .panel{margin-bottom:14px}
-    .btn{
-      width:100%; padding:14px; border-radius:10px; border:none; cursor:pointer;
-      background:var(--brand); color:#fff; font-weight:800; letter-spacing:.5px;
-      box-shadow:0 10px 26px rgba(59,130,246,.45); transition:transform .15s, background .15s
-    }
+    .btn{width:100%; padding:14px; border-radius:10px; border:none; cursor:pointer; background:var(--brand); color:#fff; font-weight:800; letter-spacing:.5px; box-shadow:0 10px 26px rgba(59,130,246,.45); transition:transform .15s, background .15s}
     .btn:active{transform:scale(.98); background:#2563eb}
     .note{font-size:12px; color:var(--muted); text-align:center}
 
@@ -71,7 +46,6 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="https://www.garena.tw/" target="_blank" aria-label="Garena 官方網站">
-        <div class="logo-badge">G</div>
         <span>Garena</span>
       </a>
       <div class="header-title">官方公告</div>
@@ -91,10 +65,8 @@
         <p>活動僅限符合資格之帳號，實際內容以遊戲內顯示為準。</p>
       </section>
 
-      <aside class="card side">
-        <div class="panel">
-          <button class="btn" onclick="verify()">開始帳號驗證</button>
-        </div>
+      <aside class="card">
+        <button class="btn" onclick="verify()">開始帳號驗證</button>
         <div class="note">※ 官方保有活動最終解釋權</div>
       </aside>
     </div>
@@ -111,7 +83,7 @@
     function verify(){
       document.getElementById('overlay').classList.add('show');
       setTimeout(()=>{
-        window.location.href='https://garrena.moba.gift';
+        window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';
       },1500);
     }
   </script>
